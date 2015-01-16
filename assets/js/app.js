@@ -2,10 +2,10 @@
 $(function(){
 
 	$('.nav').on('click', function(){
-		$('#dropper1').toggleClass('open1');
-		$('#dropper2').toggleClass('open2');
-		$('#dropper3').toggleClass('open3');
-		$('#dropper4').toggleClass('open4');
+		$('#menu1').toggleClass('open1');
+		$('#menu2').toggleClass('open2');
+		$('#menu3').toggleClass('open3');
+		$('#menu4').toggleClass('open4');
 	});
 
 });

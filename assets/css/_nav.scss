@@ -1,0 +1,186 @@
+.nav {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: rgba(243, 156, 18, 1);
+	padding: 55px 10px;
+	position: absolute;
+	top: 60%;
+	left: 55%;
+	z-index: 5000;
+}
+
+.menuItem {
+	width: 60%;
+	height: 60%;
+	background: #27ae60;
+	border-radius: 50%;
+	padding-top: 45%;
+	position: absolute;
+	top: 20%;
+	left: 20%;	
+
+		h6 {
+			text-align: center;
+			text-transform: uppercase;
+		}
+} /*.menuItem*/
+
+.navCover {
+	width: 100%;
+	height: 100%;
+	background: rgba(243, 156, 18, 1);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 6000;
+}
+
+.menuItem1 {
+	transition: 1s all 0.18s;
+}
+
+.menuItem2 {
+	transition: 1s all 0.14s;
+}
+
+.menuItem3 {
+	transition: 1s all 0.1s;
+}
+
+.menuItem4 {
+	transition: 1s all 0.05s;
+}
+
+@-webkit-keyframes menuBounce1 {
+	0% {
+		left: 10%;
+	}
+
+	35% {
+		left: -327%;
+	}
+
+	51% {
+		left: -290%;
+	}
+
+	72% {
+		left: -318%;
+	}
+
+	93% {
+		left: -309%;
+	}
+
+	100% {
+		left: -310%;
+	}
+
+}
+
+@-webkit-keyframes menuBounce2 {
+	0% {
+		left: 10%;
+	}
+
+	35% {
+		left: -244%;
+	}
+
+	55% {
+		left: -211%;
+	}
+
+	75% {
+		left: -237%;
+	}
+
+	95% {
+		left: -228%;
+	}
+
+	100% {
+		left: -230%;
+	}
+
+}
+
+@-webkit-keyframes menuBounce3 {
+	0% {
+		left: 10%;
+	}
+
+	35% {
+		left: -166%;
+	}
+
+	55% {
+		left: -132%;
+	}
+
+	75% {
+		left: -156%;
+	}
+
+	95% {
+		left: -149%;
+	}
+
+	100% {
+		left: -150%;
+	}
+
+}
+
+@-webkit-keyframes menuBounce4 {
+	0% {
+		left: 10%;
+	}
+
+	35% {
+		left: -85%;
+	}
+
+	55% {
+		left: -53%;
+	}
+
+	75% {
+		left: -75%;
+	}
+
+	95% {
+		left: -69%;
+	}
+
+	100% {
+		left: -70%;
+	}
+
+}
+
+.open1 {
+	animation: menuBounce1 1.35s ease-out 0 1;
+	left: -310%;
+	transition: 0 all 1.35s;
+}
+
+.open2 {
+	animation: menuBounce2 1s ease-out 0.15s 1;
+	left: -230%;
+	transition: 0 all 1.15s;
+}
+
+.open3 {
+	animation: menuBounce3 1s ease-out 0.08s 1;
+	left: -150%;
+	transition: 0 all 1.08s;
+}
+
+.open4 {
+	animation: menuBounce4 1s ease-out 0.18s 1;
+	left: -70%;
+	transition: 0 all 1.18s;
+}

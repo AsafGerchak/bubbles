@@ -186,23 +186,21 @@ html, body {
   left: 55%;
   z-index: 5000; }
 
-/*.nav h2 {
-	width: 80%;
-	margin: 0 auto;
-	text-align: center;
-}*/
-.drop {
+.menuItem {
   width: 60%;
   height: 60%;
   background: #27ae60;
   border-radius: 50%;
+  padding-top: 45%;
   position: absolute;
   top: 20%;
-  left: 20%;
-  /*-webkit-transition: 1s all;
-  transition: 1s all ;*/ }
+  left: 20%; }
+  .menuItem h6 {
+    text-align: center;
+    text-transform: uppercase; }
 
-.coverDrop {
+/*.menuItem*/
+.navCover {
   width: 100%;
   height: 100%;
   background: #f39c12;
@@ -212,21 +210,21 @@ html, body {
   left: 0;
   z-index: 6000; }
 
-.drop1 {
+.menuItem1 {
   -webkit-transition: 1s all 0.18s;
-  transition: 1s all 0.18s; }
+          transition: 1s all 0.18s; }
 
-.drop2 {
+.menuItem2 {
   -webkit-transition: 1s all 0.14s;
-  transition: 1s all 0.14s; }
+          transition: 1s all 0.14s; }
 
-.drop3 {
+.menuItem3 {
   -webkit-transition: 1s all 0.1s;
-  transition: 1s all 0.1s; }
+          transition: 1s all 0.1s; }
 
-.drop4 {
+.menuItem4 {
   -webkit-transition: 1s all 0.05s;
-  transition: 1s all 0.05s; }
+          transition: 1s all 0.05s; }
 
 @-webkit-keyframes menuBounce1 {
   0% {
@@ -306,27 +304,31 @@ html, body {
 
 .open1 {
   -webkit-animation: menuBounce1 1.35s ease-out 0 1;
+          animation: menuBounce1 1.35s ease-out 0 1;
   left: -310%;
   -webkit-transition: 0 all 1.35s;
-  transition: 0 all 1.35s; }
+          transition: 0 all 1.35s; }
 
 .open2 {
   -webkit-animation: menuBounce2 1s ease-out 0.15s 1;
+          animation: menuBounce2 1s ease-out 0.15s 1;
   left: -230%;
   -webkit-transition: 0 all 1.15s;
-  transition: 0 all 1.15s; }
+          transition: 0 all 1.15s; }
 
 .open3 {
   -webkit-animation: menuBounce3 1s ease-out 0.08s 1;
+          animation: menuBounce3 1s ease-out 0.08s 1;
   left: -150%;
   -webkit-transition: 0 all 1.08s;
-  transition: 0 all 1.08s; }
+          transition: 0 all 1.08s; }
 
 .open4 {
   -webkit-animation: menuBounce4 1s ease-out 0.18s 1;
+          animation: menuBounce4 1s ease-out 0.18s 1;
   left: -70%;
   -webkit-transition: 0 all 1.18s;
-  transition: 0 all 1.18s; }
+          transition: 0 all 1.18s; }
 
 .content {
   width: 100%;
