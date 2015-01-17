@@ -1,3 +1,8 @@
+/*
+==========================================
+Basics to set the tone of the show
+==========================================
+*/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -153,6 +158,24 @@ td, th {
   height: 0;
   clear: both; }
 
+/*
+==========================================
+Typography
+==========================================
+*/
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 19px;
+  font-weight: 400; }
+
+h6 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  font-size: 13.5px; }
+
+a {
+  text-decoration: none; }
+
 html, body {
   font-family: sans-serif;
   height: 100%; }
@@ -161,20 +184,34 @@ html, body {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: url("https://unsplash.imgix.net/photo-1414924347000-9823c338079b?q=75&fm=jpg&s=0fa6db3cdc65e50c111575043fad4b5c");
-  background-size: cover;
   position: relative;
   overflow: hidden; }
+
+.container1 {
+  background: url("../images/big/working.jpg") center no-repeat;
+  background-size: cover; }
 
 .container2 {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  background: url("https://ununsplash.imgix.net/photo-1414849424631-8b18529a81ca?q=75&fm=jpg&s=0e993004a2f3704e8f2ad5469315ccb7");
-  background-size: cover;
-  position: relative;
-  overflow: hidden; }
+  background: url("../images/big/benches.jpg") center no-repeat;
+  background-size: cover; }
 
+.container3 {
+  background: url("../images/big/typewriter.jpg") center no-repeat;
+  background-size: cover; }
+
+.container4 {
+  background: url("../images/big/bridge.jpg") center no-repeat;
+  background-size: cover; }
+
+.container5 {
+  background: url("../images/big/coffee.jpg") center no-repeat;
+  background-size: cover; }
+
+/*
+==========================================
+Main Nav
+==========================================
+*/
 .nav {
   width: 200px;
   height: 200px;
@@ -191,13 +228,14 @@ html, body {
   height: 60%;
   background: #27ae60;
   border-radius: 50%;
-  padding-top: 45%;
+  padding-top: 42%;
   position: absolute;
   top: 20%;
   left: 20%; }
   .menuItem h6 {
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #000; }
 
 /*.menuItem*/
 .navCover {

@@ -1,3 +1,9 @@
+/*
+==========================================
+Main Nav
+==========================================
+*/
+
 .nav {
 	width: 200px;
 	height: 200px;
@@ -15,14 +21,15 @@
 	height: 60%;
 	background: #27ae60;
 	border-radius: 50%;
-	padding-top: 45%;
+	padding-top: 42%;
 	position: absolute;
 	top: 20%;
-	left: 20%;	
+	left: 20%;
 
 		h6 {
 			text-align: center;
 			text-transform: uppercase;
+			color: #000;
 		}
 } /*.menuItem*/
 
