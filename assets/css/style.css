@@ -300,14 +300,21 @@ nav {
   height: 60%;
   background: #27ae60;
   border-radius: 50%;
-  padding-top: 42%;
   position: absolute;
   top: 20%;
   left: 20%; }
-  .menuItem h6 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #000; }
+  .menuItem .menuLabel {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .menuItem .menuLabel h6 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #000; }
 
 /*.menuItem*/
 .navCover {
