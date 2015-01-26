@@ -47,36 +47,62 @@ html, body {
 
 @import "nav";
 
-.content {
+.colorSlash {
 	width: 100%;
 	height: 200%;
-	background: rgba(192, 57, 43, 1);
-	padding: 30px;
+	// background: rgba(192, 57, 43, 1);
+	background: #C0392B;
+	// padding: 30px;
 	position: absolute;
-	right: -65%;
+	right: -60%;
 	top: -25%;
+	z-index: 100;
 	-webkit-transform: rotate(20deg);
 	transform: rotate(20deg);
 }
 
-.content h3 {
+.content {
+	width: 94%;
+	height: 90%;
+	margin: 0 auto;
+	// background: rgba(255, 255, 255, 0.2);
 	position: relative;
-	top: 30%;
-	left: 7%;
-	width: 22%;
-	text-align: right;
-	line-height: 1.5;
-	-webkit-transform: rotate(-20deg);
-	transform: rotate(-20deg);
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 200;
+
+		.brunicoLogo {
+			// width: 25%;
+			// margin: 0 0 20px 75%;
+			width: 50%;
+			margin: 0 auto 20px auto;
+
+			img {
+				width: 100%;
+			}
+		}
 }
 
-.content2 {
+.content h3 {
+	// width: 22%;
+	// position: relative;
+	// right: 0;
+	// top: 30%;
+	// left: 7%;
+	margin-left: 75%;
+	text-align: right;
+	line-height: 1.5;
+	// -webkit-transform: rotate(-20deg);
+	// transform: rotate(-20deg);
+}
+
+.colorSlash2 {
 	width: 100%;
 	height: 200%;
 	background: #8e44ad;
-	padding: 30px;
+	// padding: 30px;
 	position: absolute;
-	right: 65%;
+	right: 60%;
 	top: -25%;
 	-webkit-transform: rotate(-20deg);
 	transform: rotate(-20deg);
@@ -89,6 +115,6 @@ html, body {
 	width: 35%;
 	text-align: right;
 	line-height: 1.5;
-	-webkit-transform: rotate(20deg);
-	transform: rotate(20deg);
+	// -webkit-transform: rotate(20deg);
+	// transform: rotate(20deg);
 }

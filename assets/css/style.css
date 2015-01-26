@@ -212,7 +212,7 @@ html, body {
 Main Nav
 ==========================================
 */
-.nav {
+nav {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -222,7 +222,7 @@ Main Nav
   position: absolute;
   top: 60%;
   left: 55%;
-  z-index: 5000; }
+  z-index: 500; }
 
 .menuItem {
   width: 60%;
@@ -247,7 +247,7 @@ Main Nav
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 6000; }
+  z-index: 600; }
 
 .menuItem1 {
   -webkit-transition: 1s all 0.18s;
@@ -268,79 +268,55 @@ Main Nav
 @-webkit-keyframes menuBounce1 {
   0% {
     left: 10%; }
-
   35% {
     left: -327%; }
-
   51% {
     left: -290%; }
-
   72% {
     left: -318%; }
-
   93% {
     left: -309%; }
-
   100% {
     left: -310%; } }
-
 @-webkit-keyframes menuBounce2 {
   0% {
     left: 10%; }
-
   35% {
     left: -244%; }
-
   55% {
     left: -211%; }
-
   75% {
     left: -237%; }
-
   95% {
     left: -228%; }
-
   100% {
     left: -230%; } }
-
 @-webkit-keyframes menuBounce3 {
   0% {
     left: 10%; }
-
   35% {
     left: -166%; }
-
   55% {
     left: -132%; }
-
   75% {
     left: -156%; }
-
   95% {
     left: -149%; }
-
   100% {
     left: -150%; } }
-
 @-webkit-keyframes menuBounce4 {
   0% {
     left: 10%; }
-
   35% {
     left: -85%; }
-
   55% {
     left: -53%; }
-
   75% {
     left: -75%; }
-
   95% {
     left: -69%; }
-
   100% {
     left: -70%; } }
-
 .open1 {
   -webkit-animation: menuBounce1 1.35s ease-out 0 1;
           animation: menuBounce1 1.35s ease-out 0 1;
@@ -369,36 +345,45 @@ Main Nav
   -webkit-transition: 0 all 1.18s;
           transition: 0 all 1.18s; }
 
-.content {
+.colorSlash {
   width: 100%;
   height: 200%;
-  background: #c0392b;
-  padding: 30px;
+  background: #C0392B;
   position: absolute;
-  right: -65%;
+  right: -60%;
   top: -25%;
+  z-index: 100;
   -webkit-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
       transform: rotate(20deg); }
 
-.content h3 {
+.content {
+  width: 94%;
+  height: 90%;
+  margin: 0 auto;
   position: relative;
-  top: 30%;
-  left: 7%;
-  width: 22%;
-  text-align: right;
-  line-height: 1.5;
-  -webkit-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-      transform: rotate(-20deg); }
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 200; }
+  .content .brunicoLogo {
+    width: 50%;
+    margin: 0 auto 20px auto; }
+    .content .brunicoLogo img {
+      width: 100%; }
 
-.content2 {
+.content h3 {
+  margin-left: 75%;
+  text-align: right;
+  line-height: 1.5; }
+
+.colorSlash2 {
   width: 100%;
   height: 200%;
   background: #8e44ad;
-  padding: 30px;
   position: absolute;
-  right: 65%;
+  right: 60%;
   top: -25%;
   -webkit-transform: rotate(-20deg);
   -ms-transform: rotate(-20deg);
@@ -410,7 +395,4 @@ Main Nav
   left: 10%;
   width: 35%;
   text-align: right;
-  line-height: 1.5;
-  -webkit-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-      transform: rotate(20deg); }
+  line-height: 1.5; }

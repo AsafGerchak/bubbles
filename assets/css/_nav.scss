@@ -4,7 +4,7 @@ Main Nav
 ==========================================
 */
 
-.nav {
+nav {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
@@ -14,7 +14,7 @@ Main Nav
 	position: absolute;
 	top: 60%;
 	left: 55%;
-	z-index: 5000;
+	z-index: 500;
 }
 
 .menuItem {
@@ -42,7 +42,7 @@ Main Nav
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 6000;
+	z-index: 600;
 }
 
 .menuItem1 {
