@@ -10,7 +10,8 @@ $block1: rgba(192, 57, 43, 1);
 $block2: #8e44ad;
 $detail1: rgba(243, 156, 18, 1);
 $detail2: #27ae60;
-$detail3: rgba(243, 156, 18, 0.15);
+// $detail3: rgba(243, 156, 18, 0.15);
+$detail3: rgba(203, 147, 98, 0.2);
 $font: #222;
 
 
@@ -39,4 +40,16 @@ h6 {
 
 a {
 	text-decoration: none;
+}
+
+
+/* =================================
+Media Queries */
+
+@media (max-width: 650px) {
+	
+	h3 {
+		font-size: 28px;
+	}
+
 }

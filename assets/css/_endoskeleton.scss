@@ -23,6 +23,8 @@ section {
 
 @mixin hero($pic) {
 	background: linear-gradient($detail3, $detail3), url($pic) center no-repeat;
+	// background: linear-gradient($detail4, $detail4), url($pic) center no-repeat;
+	// background: url($pic) center no-repeat;
 	background-size: cover;
 }
 
@@ -122,7 +124,7 @@ Content Wrapper */
 /* =================================
 Media Queries */
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
 	
 	.colorSlash {
 		width: 200%;
