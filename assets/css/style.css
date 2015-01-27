@@ -1,8 +1,3 @@
-/*
-==========================================
-Basics to set the tone of the show
-==========================================
-*/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -160,18 +155,27 @@ td, th {
 
 /*
 ==========================================
-Typography
+Typography and Variable
 ==========================================
 */
+h3, h5, h6, p, a {
+  color: #222222; }
+
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 19px;
   font-weight: 400; }
 
+h5 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.4px; }
+
 h6 {
   font-family: 'Crimson Text', serif;
   font-weight: 600;
-  font-size: 13.5px; }
+  font-size: 12px; }
 
 a {
   text-decoration: none; }
@@ -302,19 +306,33 @@ nav {
   border-radius: 50%;
   position: absolute;
   top: 20%;
-  left: 20%; }
+  left: 20%;
+  /*.menuLabel*/ }
   .menuItem .menuLabel {
     width: 50%;
     margin: 0 auto;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    -webkit-transform: translateY(-55%);
+        -ms-transform: translateY(-55%);
+            transform: translateY(-55%);
+    /*.menuLabel h6*/
+    /*.menuLabel svg*/ }
     .menuItem .menuLabel h6 {
       text-align: center;
       text-transform: uppercase;
-      color: #000; }
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      opacity: 0;
+      -webkit-transition: all 0.2s 0.05s;
+              transition: all 0.2s 0.05s; }
+    .menuItem .menuLabel svg {
+      fill: #222222; }
+  .menuItem:nth-child(2) .menuLabel h6, .menuItem:nth-child(3) .menuLabel h6 {
+    bottom: -7%; }
 
 /*.menuItem*/
 .navCover {
@@ -325,8 +343,32 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 600; }
+  z-index: 600;
+  /*.menuCover*/ }
+  .navCover .menuCover {
+    width: 55%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-55%);
+        -ms-transform: translateX(-50%) translateY(-55%);
+            transform: translateX(-50%) translateY(-55%);
+    /*.menuCover svg*/
+    /*.menuCover h5*/ }
+    .navCover .menuCover svg {
+      fill: #222222; }
+    .navCover .menuCover h5 {
+      text-align: center;
+      text-transform: uppercase;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
 
+/*.navCover*/
+/* =================================
+Defining Animations */
 .menuItem1 {
   -webkit-transition: 1s all 0.18s;
           transition: 1s all 0.18s; }
@@ -346,82 +388,132 @@ nav {
 @-webkit-keyframes menuBounce1 {
   0% {
     left: 10%; }
+
   35% {
     left: -327%; }
+
   51% {
     left: -290%; }
+
   72% {
     left: -318%; }
+
   93% {
     left: -309%; }
+
   100% {
     left: -310%; } }
+
 @-webkit-keyframes menuBounce2 {
   0% {
     left: 10%; }
+
   35% {
     left: -244%; }
+
   55% {
     left: -211%; }
+
   75% {
     left: -237%; }
+
   95% {
     left: -228%; }
+
   100% {
     left: -230%; } }
+
 @-webkit-keyframes menuBounce3 {
   0% {
     left: 10%; }
+
   35% {
     left: -166%; }
+
   55% {
     left: -132%; }
+
   75% {
     left: -156%; }
+
   95% {
     left: -149%; }
+
   100% {
     left: -150%; } }
+
 @-webkit-keyframes menuBounce4 {
   0% {
     left: 10%; }
+
   35% {
     left: -85%; }
+
   55% {
     left: -53%; }
+
   75% {
     left: -75%; }
+
   95% {
     left: -69%; }
+
   100% {
     left: -70%; } }
+
+/* =================================
+Animation and Hover Classes */
 .open1 {
   -webkit-animation: menuBounce1 1.35s ease-out 0 1;
           animation: menuBounce1 1.35s ease-out 0 1;
   left: -310%;
-  -webkit-transition: 0 all 1.35s;
-          transition: 0 all 1.35s; }
+  -webkit-transition: left 1.35s, -webkit-transform 0.3s;
+          transition: left 1.35s, transform 0.3s; }
+  .open1:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15); }
+    .open1:hover h6 {
+      opacity: 1; }
 
 .open2 {
   -webkit-animation: menuBounce2 1s ease-out 0.15s 1;
           animation: menuBounce2 1s ease-out 0.15s 1;
   left: -230%;
-  -webkit-transition: 0 all 1.15s;
-          transition: 0 all 1.15s; }
+  -webkit-transition: left 1.15s, -webkit-transform 0.3s;
+          transition: left 1.15s, transform 0.3s; }
+  .open2:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15); }
+    .open2:hover h6 {
+      opacity: 1; }
 
 .open3 {
   -webkit-animation: menuBounce3 1s ease-out 0.08s 1;
           animation: menuBounce3 1s ease-out 0.08s 1;
   left: -150%;
-  -webkit-transition: 0 all 1.08s;
-          transition: 0 all 1.08s; }
+  -webkit-transition: left 1.08s, -webkit-transform 0.3s;
+          transition: left 1.08s, transform 0.3s; }
+  .open3:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15); }
+    .open3:hover h6 {
+      opacity: 1; }
 
 .open4 {
   -webkit-animation: menuBounce4 1s ease-out 0.18s 1;
           animation: menuBounce4 1s ease-out 0.18s 1;
   left: -70%;
-  -webkit-transition: 0 all 1.18s;
-          transition: 0 all 1.18s; }
+  -webkit-transition: left 1.18s, -webkit-transform 0.3s;
+          transition: left 1.18s, transform 0.3s; }
+  .open4:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15); }
+    .open4:hover h6 {
+      opacity: 1; }
 
 /* =================================
 Media Queries */
@@ -432,8 +524,8 @@ Media Queries */
     top: 5%;
     left: 70%; } }
 .container1 .brunicoLogo {
-  width: 45%;
-  margin: 30px auto 20px auto; }
+  width: 25%;
+  margin: 0 0 20px 75%; }
   .container1 .brunicoLogo img {
     width: 100%; }
 

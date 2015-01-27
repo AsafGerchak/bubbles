@@ -8,7 +8,7 @@ nav {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background: rgba(243, 156, 18, 1);
+	background: $detail1;
 	padding: 55px 10px;
 	cursor: pointer;
 	position: absolute;
@@ -20,7 +20,7 @@ nav {
 .menuItem {
 	width: 60%;
 	height: 60%;
-	background: #27ae60;
+	background: $detail2;
 	border-radius: 50%;
 	// padding-top: 42%;
 	position: absolute;
@@ -32,29 +32,71 @@ nav {
 		margin: 0 auto;
 		position: relative;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-55%);
 
 		h6 {
 		text-align: center;
 		text-transform: uppercase;
-		color: #000;
-		}
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0;
+		transition: all 0.2s 0.05s;
+		} /*.menuLabel h6*/
 
+		svg {
+			fill: $font;
+		} /*.menuLabel svg*/
+
+	} /*.menuLabel*/
+
+	&:nth-child(1) .menuLabel h6 {
+		// left: 15%;
 	}
 
-		
+	&:nth-child(2) .menuLabel h6,
+	&:nth-child(3) .menuLabel h6 {
+		bottom: -7%;
+		// left: -15%;
+	}
 } /*.menuItem*/
 
 .navCover {
 	width: 100%;
 	height: 100%;
-	background: rgba(243, 156, 18, 1);
+	background: $detail1;
 	border-radius: 50%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 600;
-}
+
+	.menuCover {
+
+		width: 55%;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-55%);
+
+		svg {
+			fill: $font;
+		}/*.menuCover svg*/
+
+		h5 {
+			text-align: center;
+			text-transform: uppercase;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		} /*.menuCover h5*/
+
+	} /*.menuCover*/
+} /*.navCover*/
+
+
+/* =================================
+Defining Animations */
 
 .menuItem1 {
 	transition: 1s all 0.18s;
@@ -180,28 +222,54 @@ nav {
 
 }
 
+
+/* =================================
+Animation and Hover Classes */
+
+@mixin menuMove($position, $speed) {
+	left: $position;
+	transition: left $speed, transform 0.3s;
+
+	&:hover {
+		transform: scale(1.15);
+
+		& h6 {
+			// color: rgba(34, 34, 34, 1);
+			opacity: 1;
+		}
+	}
+}
+
 .open1 {
 	animation: menuBounce1 1.35s ease-out 0 1;
-	left: -310%;
-	transition: 0 all 1.35s;
+	// left: -310%;
+	// transition: 0 left 1.35s, transform 0.5s;
+
+	// &:hover {
+	// 	transform: scale(1.33);
+	// }
+	@include menuMove(-310%, 1.35s);
 }
 
 .open2 {
 	animation: menuBounce2 1s ease-out 0.15s 1;
-	left: -230%;
-	transition: 0 all 1.15s;
+	// left: -230%;
+	// transition: 0 all 1.15s;
+	@include menuMove(-230%, 1.15s);
 }
 
 .open3 {
 	animation: menuBounce3 1s ease-out 0.08s 1;
-	left: -150%;
-	transition: 0 all 1.08s;
+	// left: -150%;
+	// transition: 0 all 1.08s;
+	@include menuMove(-150%, 1.08s);
 }
 
 .open4 {
 	animation: menuBounce4 1s ease-out 0.18s 1;
-	left: -70%;
-	transition: 0 all 1.18s;
+	// left: -70%;
+	// transition: 0 all 1.18s;
+	@include menuMove(-70%, 1.18s);
 }
 
 
