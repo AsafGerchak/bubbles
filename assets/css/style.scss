@@ -10,16 +10,37 @@
 .container1 {
 
 	.brunicoLogo {
-			width: 25%;
-			margin: 0 0 20px 75%;
-			// width: 45%;
-			// margin: 30px auto 20px auto;
+		// width: 25%;
+		// margin: 0 0 20px 75%;
+		width: 45%;
+		position: absolute;
+		bottom: 5%;
+		left: 0;
+		// transform: translateY(-60%);
+		// float: left;
+		// margin: 30px auto 20px auto;
 
-			img {
-				width: 100%;
-			}
+		img {
+			width: 100%;
 		}
-}
+	} /*.brunicoLogo*/
+
+	h3 {
+		// margin: 0 0 0 65%;
+		// padding-top: 20%;
+		text-align: right;
+		line-height: 1.5;
+		position: absolute;
+		right: 0;
+		bottom: 5%;
+		width: 38%;
+		// position: relative;
+		// right: 0;
+		// top: 50%;
+		// transform: translate(-50%);
+	}
+
+} /*.container1*/
 
 
 /* =================================

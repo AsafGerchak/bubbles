@@ -10,24 +10,19 @@ $block1: rgba(192, 57, 43, 1);
 $block2: #8e44ad;
 $detail1: rgba(243, 156, 18, 1);
 $detail2: #27ae60;
+$detail3: rgba(243, 156, 18, 0.15);
 $font: #222;
 
 
-h3, h5, h6, p, a {
+h3, h6, p, a {
 	color: $font;
 }
 
 h3 {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 19px;
+	font-size: 32px;
 	font-weight: 400;
-}
-
-h5 {
-	font-family:'Crimson Text', serif;
-	font-weight: 600;
-	font-size: 18px;
-	letter-spacing: -0.4px;
+	letter-spacing: 0.5px;
 }
 
 h6 {
@@ -35,6 +30,12 @@ h6 {
 	font-weight: 600;
 	font-size: 12px;
 }
+
+// p {
+// 	font-family: 'Source Sans Pro', sans-serif;
+// 	font-size: 18px;
+// 	font-weight: 400;
+// }
 
 a {
 	text-decoration: none;

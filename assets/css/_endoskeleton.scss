@@ -22,7 +22,7 @@ section {
 }
 
 @mixin hero($pic) {
-	background: url($pic) center no-repeat;
+	background: linear-gradient($detail3, $detail3), url($pic) center no-repeat;
 	background-size: cover;
 }
 
@@ -93,20 +93,20 @@ Content Wrapper */
 	z-index: 200;
 }
 
-.content h3 {
+.content p {
 	// width: 22%;
 	// position: relative;
 	// right: 0;
 	// top: 30%;
 	// left: 7%;
-	margin: 0 0 0 75%;
-	text-align: right;
-	line-height: 1.5;
+	// margin: 0 0 0 75%;
+	// text-align: right;
+	// line-height: 1.5;
 	// -webkit-transform: rotate(-20deg);
 	// transform: rotate(-20deg);
 }
 
-.content2 h3 {
+.content2 p {
 	// position: relative;
 	// top: 37%;
 	// left: 10%;
@@ -136,7 +136,7 @@ Media Queries */
 		top: 60%;
 	}
 
-	.content h3 {
+	.content p {
 		font-size: 16px;
 		margin: 110% 0 0 0;
 		text-align: left;
