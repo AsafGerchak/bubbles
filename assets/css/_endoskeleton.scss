@@ -124,7 +124,7 @@ Content Wrapper */
 /* =================================
 Media Queries */
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 	
 	.colorSlash {
 		width: 200%;
@@ -138,10 +138,14 @@ Media Queries */
 		top: 60%;
 	}
 
-	.content p {
-		font-size: 16px;
-		margin: 110% 0 0 0;
-		text-align: left;
-	}
+	.content {
+		height: 95%;
 
+		p {
+			font-size: 16px;
+			margin: 110% 0 0 0;
+			text-align: left;
+		}
+	
+	}
 }

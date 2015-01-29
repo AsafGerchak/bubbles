@@ -159,7 +159,7 @@ Typography and Variable
 ==========================================
 */
 h3, h6, p, a {
-  color: #222; }
+  color: #222222; }
 
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -168,18 +168,22 @@ h3 {
   letter-spacing: 0.5px; }
 
 h6 {
-  font-family: 'Crimson Text', serif;
-  font-weight: 600;
-  font-size: 12px; }
+  font-family: 'Asap', serif;
+  font-weight: 400;
+  font-size: 11px; }
 
 a {
   text-decoration: none; }
 
 /* =================================
 Media Queries */
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   h3 {
-    font-size: 28px; } }
+    font-size: 24px; }
+
+  h6 {
+    font-size: 9.5px;
+    font-weight: 700; } }
 /*
 ==========================================
 Primary Page Structure
@@ -198,28 +202,28 @@ section {
   overflow: hidden; }
 
 .container1 {
-  background: -webkit-linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/working.jpg") center no-repeat;
-  background: linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/working.jpg") center no-repeat;
+  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/working.jpg") center no-repeat;
+  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/working.jpg") center no-repeat;
   background-size: cover; }
 
 .container2 {
-  background: -webkit-linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/benches.jpg") center no-repeat;
-  background: linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/benches.jpg") center no-repeat;
+  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/benches.jpg") center no-repeat;
+  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/benches.jpg") center no-repeat;
   background-size: cover; }
 
 .container3 {
-  background: -webkit-linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/typewriter.jpg") center no-repeat;
-  background: linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/typewriter.jpg") center no-repeat;
+  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/typewriter.jpg") center no-repeat;
+  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/typewriter.jpg") center no-repeat;
   background-size: cover; }
 
 .container4 {
-  background: -webkit-linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/bridge.jpg") center no-repeat;
-  background: linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/bridge.jpg") center no-repeat;
+  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/bridge.jpg") center no-repeat;
+  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/bridge.jpg") center no-repeat;
   background-size: cover; }
 
 .container5 {
-  background: -webkit-linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/coffee.jpg") center no-repeat;
-  background: linear-gradient(rgba(203, 147, 98, 0.2), rgba(203, 147, 98, 0.2)), url("../images/big/coffee.jpg") center no-repeat;
+  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/coffee.jpg") center no-repeat;
+  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/coffee.jpg") center no-repeat;
   background-size: cover; }
 
 /* =================================
@@ -267,7 +271,7 @@ Content Wrapper */
 
 /* =================================
 Media Queries */
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .colorSlash {
     width: 200%;
     right: -25%;
@@ -278,10 +282,12 @@ Media Queries */
     left: -25%;
     top: 60%; }
 
-  .content p {
-    font-size: 16px;
-    margin: 110% 0 0 0;
-    text-align: left; } }
+  .content {
+    height: 95%; }
+    .content p {
+      font-size: 16px;
+      margin: 110% 0 0 0;
+      text-align: left; } }
 /*
 ==========================================
 Main Nav
@@ -313,9 +319,11 @@ nav {
     margin: 0 auto;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-55%);
-        -ms-transform: translateY(-55%);
-            transform: translateY(-55%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all 0.2s;
+            transition: all 0.2s;
     /*.menuLabel h6*/
     /*.menuLabel svg*/ }
     .menuItem .menuLabel h6 {
@@ -330,7 +338,7 @@ nav {
       -webkit-transition: all 0.2s 0.05s;
               transition: all 0.2s 0.05s; }
     .menuItem .menuLabel svg {
-      fill: #222; }
+      fill: #222222; }
   .menuItem:nth-child(2) .menuLabel h6, .menuItem:nth-child(3) .menuLabel h6 {
     bottom: -7%; }
 
@@ -353,18 +361,9 @@ nav {
     -webkit-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
-    /*.menuCover svg*/
-    /*.menuCover h5*/ }
+    /*.menuCover svg*/ }
     .navCover .menuCover svg {
-      fill: #222; }
-    .navCover .menuCover h5 {
-      text-align: center;
-      text-transform: uppercase;
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%); }
+      fill: #222222; }
 
 /*.navCover*/
 /* =================================
@@ -388,55 +387,79 @@ Defining Animations */
 @-webkit-keyframes menuBounce1 {
   0% {
     left: 10%; }
+
   35% {
     left: -327%; }
+
   51% {
     left: -290%; }
+
   72% {
     left: -318%; }
+
   93% {
     left: -309%; }
+
   100% {
     left: -310%; } }
+
 @-webkit-keyframes menuBounce2 {
   0% {
     left: 10%; }
+
   35% {
     left: -244%; }
+
   55% {
     left: -211%; }
+
   75% {
     left: -237%; }
+
   95% {
     left: -228%; }
+
   100% {
     left: -230%; } }
+
 @-webkit-keyframes menuBounce3 {
   0% {
     left: 10%; }
+
   35% {
     left: -166%; }
+
   55% {
     left: -132%; }
+
   75% {
     left: -156%; }
+
   95% {
     left: -149%; }
+
   100% {
     left: -150%; } }
+
 @-webkit-keyframes menuBounce4 {
   0% {
     left: 10%; }
+
   35% {
     left: -85%; }
+
   55% {
     left: -53%; }
+
   75% {
     left: -75%; }
+
   95% {
     left: -69%; }
+
   100% {
     left: -70%; } }
+
 /* =================================
 Animation and Hover Classes */
 .open1 {
@@ -449,6 +472,10 @@ Animation and Hover Classes */
     -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
             transform: scale(1.15); }
+    .open1:hover .menuLabel {
+      -webkit-transform: translateY(-57%);
+          -ms-transform: translateY(-57%);
+              transform: translateY(-57%); }
     .open1:hover h6 {
       opacity: 1; }
 
@@ -462,6 +489,10 @@ Animation and Hover Classes */
     -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
             transform: scale(1.15); }
+    .open2:hover .menuLabel {
+      -webkit-transform: translateY(-57%);
+          -ms-transform: translateY(-57%);
+              transform: translateY(-57%); }
     .open2:hover h6 {
       opacity: 1; }
 
@@ -475,6 +506,10 @@ Animation and Hover Classes */
     -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
             transform: scale(1.15); }
+    .open3:hover .menuLabel {
+      -webkit-transform: translateY(-57%);
+          -ms-transform: translateY(-57%);
+              transform: translateY(-57%); }
     .open3:hover h6 {
       opacity: 1; }
 
@@ -488,17 +523,144 @@ Animation and Hover Classes */
     -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
             transform: scale(1.15); }
+    .open4:hover .menuLabel {
+      -webkit-transform: translateY(-57%);
+          -ms-transform: translateY(-57%);
+              transform: translateY(-57%); }
     .open4:hover h6 {
       opacity: 1; }
 
 /* =================================
 Media Queries */
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   nav {
     width: 110px;
     height: 110px;
     top: 5%;
-    left: 5%; } }
+    left: 5%;
+    /* nav.nemuItem */ }
+    nav .menuItem {
+      width: 90%;
+      height: 90%;
+      top: 5%;
+      left: 5%; }
+      nav .menuItem .menuLabel {
+        width: 40%;
+        top: 45%; }
+        nav .menuItem .menuLabel h6 {
+          opacity: 1; }
+    nav .open1:hover,
+    nav .open2:hover,
+    nav .open3:hover,
+    nav .open4:hover {
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+
+  /* nav */
+  @-webkit-keyframes menuDrop1 {
+    0% {
+      top: 5%; }
+
+    35% {
+      top: 120%; }
+
+    55% {
+      top: 88%; }
+
+    75% {
+      top: 115%; }
+
+    95% {
+      top: 104%; }
+
+    100% {
+      top: 105%; } }
+
+  @-webkit-keyframes menuDrop2 {
+    0% {
+      top: 5%; }
+
+    35% {
+      top: 216%; }
+
+    55% {
+      top: 182%; }
+
+    75% {
+      top: 206%; }
+
+    95% {
+      top: 199%; }
+
+    100% {
+      top: 200%; } }
+
+  @-webkit-keyframes menuDrop3 {
+    0% {
+      top: 5%; }
+
+    35% {
+      top: 308%; }
+
+    55% {
+      top: 275%; }
+
+    75% {
+      top: 301%; }
+
+    95% {
+      top: 292%; }
+
+    100% {
+      top: 294%; } }
+
+  @-webkit-keyframes menuDrop4 {
+    0% {
+      top: 5%; }
+
+    35% {
+      top: 397%; }
+
+    51% {
+      top: 370%; }
+
+    72% {
+      top: 398%; }
+
+    93% {
+      top: 389%; }
+
+    100% {
+      top: 390%; } }
+
+  nav .drop1 {
+    -webkit-animation: menuDrop1 1s ease-out 0.18s 1;
+            animation: menuDrop1 1s ease-out 0.18s 1;
+    top: 105%;
+    -webkit-transition: top 1.18s, -webkit-transform 0.3s;
+            transition: top 1.18s, transform 0.3s; }
+
+  nav .drop2 {
+    -webkit-animation: menuDrop2 1s ease-out 0.08s 1;
+            animation: menuDrop2 1s ease-out 0.08s 1;
+    top: 200%;
+    -webkit-transition: top 1.08s, -webkit-transform 0.3s;
+            transition: top 1.08s, transform 0.3s; }
+
+  nav .drop3 {
+    -webkit-animation: menuDrop3 1s ease-out 0.15s 1;
+            animation: menuDrop3 1s ease-out 0.15s 1;
+    top: 294%;
+    -webkit-transition: top 1.15s, -webkit-transform 0.3s;
+            transition: top 1.15s, transform 0.3s; }
+
+  nav .drop4 {
+    -webkit-animation: menuDrop4 1.35s ease-out 0 1;
+            animation: menuDrop4 1.35s ease-out 0 1;
+    top: 390%;
+    -webkit-transition: top 1.35s, -webkit-transform 0.3s;
+            transition: top 1.35s, transform 0.3s; } }
 .container1 {
   /*.brunicoLogo*/ }
   .container1 .brunicoLogo {
@@ -519,12 +681,12 @@ Media Queries */
 /* .container1 */
 /* =================================
 Media Queries */
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .container1 .brunicoLogo {
     width: 60%;
     left: inherit;
     bottom: inherit;
-    top: 5%;
+    top: 6.5%;
     right: 5%; }
   .container1 h3 {
     width: 100%;

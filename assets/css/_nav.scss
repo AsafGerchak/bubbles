@@ -32,7 +32,8 @@ nav {
 		margin: 0 auto;
 		position: relative;
 		top: 50%;
-		transform: translateY(-55%);
+		transform: translateY(-50%);
+		transition: all 0.2s;
 
 		h6 {
 		text-align: center;
@@ -83,13 +84,13 @@ nav {
 			fill: $font;
 		}/*.menuCover svg*/
 
-		h5 {
-			text-align: center;
-			text-transform: uppercase;
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
-		} /*.menuCover h5*/
+		// h5 {
+		// 	text-align: center;
+		// 	text-transform: uppercase;
+		// 	position: absolute;
+		// 	left: 50%;
+		// 	transform: translateX(-50%);
+		// } /*.menuCover h5*/
 
 	} /*.menuCover*/
 } /*.navCover*/
@@ -233,8 +234,11 @@ Animation and Hover Classes */
 	&:hover {
 		transform: scale(1.15);
 
+		& .menuLabel {
+			transform: translateY(-57%);
+		}
+
 		& h6 {
-			// color: rgba(34, 34, 34, 1);
 			opacity: 1;
 		}
 	}
@@ -276,13 +280,177 @@ Animation and Hover Classes */
 /* =================================
 Media Queries */
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 
 	nav {
 		width: 110px;
 		height: 110px;
 		top: 5%;
 		left: 5%;
+
+		.menuItem {
+			width: 90%;
+			height: 90%;
+			top: 5%;
+			left: 5%;
+
+			.menuLabel {
+				width: 40%;
+				top: 45%;
+
+				h6 {
+					opacity: 1;
+				}
+			}
+
+		} /* nav.nemuItem */
+
+		.open1,
+		.open2,
+		.open3,
+		.open4 {
+			// animation: none;
+
+			&:hover {
+				transform: none;
+			}
+		}
+
+	} /* nav */
+
+
+	@-webkit-keyframes menuDrop1 {
+		0% {
+			top: 5%;
+		}
+
+		35% {
+			top: 120%;
+		}
+
+		55% {
+			top: 88%;
+		}
+
+		75% {
+			top: 115%;
+		}
+
+		95% {
+			top: 104%;
+		}
+
+		100% {
+			top: 105%;
+		}
+
 	}
+
+	@-webkit-keyframes menuDrop2 {
+		0% {
+			top: 5%;
+		}
+
+		35% {
+			top: 216%;
+		}
+
+		55% {
+			top: 182%;
+		}
+
+		75% {
+			top: 206%;
+		}
+
+		95% {
+			top: 199%;
+		}
+
+		100% {
+			top: 200%;
+		}
+
+	}
+
+	@-webkit-keyframes menuDrop3 {
+		0% {
+			top: 5%;
+		}
+
+		35% {
+			top: 308%;
+		}
+
+		55% {
+			top: 275%;
+		}
+
+		75% {
+			top: 301%;
+		}
+
+		95% {
+			top: 292%;
+		}
+
+		100% {
+			top: 294%;
+		}
+
+	}
+
+	@-webkit-keyframes menuDrop4 {
+		0% {
+			top: 5%;
+		}
+
+		35% {
+			top: 397%;
+		}
+
+		51% {
+			top: 370%;
+		}
+
+		72% {
+			top: 398%;
+		}
+
+		93% {
+			top: 389%;
+		}
+
+		100% {
+			top: 390%;
+		}
+
+	}
+
+	@mixin menuDown($position2, $speed2) {
+		top: $position2;
+		transition: top $speed2, transform 0.3s;
+	}
+
+	nav .drop1 {
+		animation: menuDrop1 1s ease-out 0.18s 1;
+		@include menuDown(105%, 1.18s);
+	}
+
+	nav .drop2 {
+		animation: menuDrop2 1s ease-out 0.08s 1;
+		@include menuDown(200%, 1.08s);
+	}
+
+	nav .drop3 {
+		animation: menuDrop3 1s ease-out 0.15s 1;
+		@include menuDown(294%, 1.15s);
+	}
+
+	nav .drop4 {
+		animation: menuDrop4 1.35s ease-out 0 1;
+		@include menuDown(390%, 1.35s);
+	}
+
 
 }
