@@ -159,7 +159,7 @@ Typography and Variable
 ==========================================
 */
 h2, h3, h6, p, a {
-  color: #222222; }
+  color: #222; }
 
 h2, h6 {
   font-family: 'Asap', serif;
@@ -355,7 +355,7 @@ nav {
       -webkit-transition: all 0.2s 0.05s;
               transition: all 0.2s 0.05s; }
     .menuItem .menuLabel svg {
-      fill: #222222; }
+      fill: #222; }
   .menuItem:nth-child(2) .menuLabel h6, .menuItem:nth-child(3) .menuLabel h6 {
     bottom: -7%; }
 
@@ -380,7 +380,7 @@ nav {
             transform: translateX(-50%) translateY(-50%);
     /*.menuCover svg*/ }
     .navCover .menuCover svg {
-      fill: #222222; }
+      fill: #222; }
 
 /*.navCover*/
 /* =================================
@@ -404,79 +404,55 @@ Defining Animations */
 @-webkit-keyframes menuBounce1 {
   0% {
     left: 10%; }
-
   35% {
     left: -327%; }
-
   51% {
     left: -290%; }
-
   72% {
     left: -318%; }
-
   93% {
     left: -309%; }
-
   100% {
     left: -310%; } }
-
 @-webkit-keyframes menuBounce2 {
   0% {
     left: 10%; }
-
   35% {
     left: -244%; }
-
   55% {
     left: -211%; }
-
   75% {
     left: -237%; }
-
   95% {
     left: -228%; }
-
   100% {
     left: -230%; } }
-
 @-webkit-keyframes menuBounce3 {
   0% {
     left: 10%; }
-
   35% {
     left: -166%; }
-
   55% {
     left: -132%; }
-
   75% {
     left: -156%; }
-
   95% {
     left: -149%; }
-
   100% {
     left: -150%; } }
-
 @-webkit-keyframes menuBounce4 {
   0% {
     left: 10%; }
-
   35% {
     left: -85%; }
-
   55% {
     left: -53%; }
-
   75% {
     left: -75%; }
-
   95% {
     left: -69%; }
-
   100% {
     left: -70%; } }
-
 /* =================================
 Animation and Hover Classes */
 .open1 {
@@ -571,79 +547,55 @@ Media Queries */
   @-webkit-keyframes menuDrop1 {
     0% {
       top: 5%; }
-
     35% {
       top: 120%; }
-
     55% {
       top: 88%; }
-
     75% {
       top: 115%; }
-
     95% {
       top: 104%; }
-
     100% {
       top: 105%; } }
-
   @-webkit-keyframes menuDrop2 {
     0% {
       top: 5%; }
-
     35% {
       top: 216%; }
-
     55% {
       top: 182%; }
-
     75% {
       top: 206%; }
-
     95% {
       top: 199%; }
-
     100% {
       top: 200%; } }
-
   @-webkit-keyframes menuDrop3 {
     0% {
       top: 5%; }
-
     35% {
       top: 308%; }
-
     55% {
       top: 275%; }
-
     75% {
       top: 301%; }
-
     95% {
       top: 292%; }
-
     100% {
       top: 294%; } }
-
   @-webkit-keyframes menuDrop4 {
     0% {
       top: 5%; }
-
     35% {
       top: 397%; }
-
     51% {
       top: 370%; }
-
     72% {
       top: 398%; }
-
     93% {
       top: 389%; }
-
     100% {
       top: 390%; } }
-
   nav .drop1 {
     -webkit-animation: menuDrop1 1s ease-out 0.18s 1;
             animation: menuDrop1 1s ease-out 0.18s 1;
@@ -700,79 +652,55 @@ Media Queries */
   @-webkit-keyframes menuMiniDrop1 {
     0% {
       top: 2.5%; }
-
     35% {
       top: 125%; }
-
     55% {
       top: 93%; }
-
     75% {
       top: 120%; }
-
     95% {
       top: 109%; }
-
     100% {
       top: 110%; } }
-
   @-webkit-keyframes menuMiniDrop2 {
     0% {
       top: 2.5%; }
-
     35% {
       top: 231%; }
-
     55% {
       top: 197%; }
-
     75% {
       top: 221%; }
-
     95% {
       top: 214%; }
-
     100% {
       top: 215%; } }
-
   @-webkit-keyframes menuMiniDrop3 {
     0% {
       top: 2.5%; }
-
     35% {
       top: 332%; }
-
     55% {
       top: 299%; }
-
     75% {
       top: 325%; }
-
     95% {
       top: 316%; }
-
     100% {
       top: 318%; } }
-
   @-webkit-keyframes menuMiniDrop4 {
     0% {
       top: 2.5%; }
-
     35% {
       top: 430%; }
-
     51% {
       top: 403%; }
-
     72% {
       top: 431%; }
-
     93% {
       top: 422%; }
-
     100% {
       top: 423%; } }
-
   nav .drop1 {
     -webkit-animation: menuMiniDrop1 1s ease-out 0.18s 1;
             animation: menuMiniDrop1 1s ease-out 0.18s 1;
