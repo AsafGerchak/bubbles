@@ -57,4 +57,16 @@ Media Queries */
 		font-weight: 700;
 	}
 
+} /* @media (max-width: 600px) */
+
+@media (max-width: 480px) {
+	
+	h3 {
+		font-size: 18px;
+	}
+
+	h6 {
+		font-size: 9px;
+	}
+
 }

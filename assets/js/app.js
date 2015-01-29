@@ -35,7 +35,7 @@ $(function(){
 			$('#menu2').toggleClass('open2').removeClass('drop2');
 			$('#menu3').toggleClass('open3').removeClass('drop3');
 			$('#menu4').toggleClass('open4').removeClass('drop4');
-		} else if ($('nav').css('width') == '110px') {
+		} else if ($('nav').css('width') == '110px' || $('nav').css('width') == '80px') {
 			$('#menu1').toggleClass('drop1').removeClass('open1');
 			$('#menu2').toggleClass('drop2').removeClass('open2');
 			$('#menu3').toggleClass('drop3').removeClass('open3');

@@ -70,10 +70,11 @@ Media Queries */
 } /* @media (max-width: 650px) */
 
 // NEXUS 5 BELOW WHAT?!?
-@media (max-width: 360px) {
+@media (max-width: 480px) {
 
 	.container1 .brunicoLogo {
 		// top: 50%;
+		top: 4%;
 	}
 
 }

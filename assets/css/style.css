@@ -184,6 +184,13 @@ Media Queries */
   h6 {
     font-size: 9.5px;
     font-weight: 700; } }
+/* @media (max-width: 600px) */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 18px; }
+
+  h6 {
+    font-size: 9px; } }
 /*
 ==========================================
 Primary Page Structure
@@ -298,7 +305,6 @@ nav {
   height: 200px;
   border-radius: 50%;
   background: #f39c12;
-  padding: 55px 10px;
   cursor: pointer;
   position: absolute;
   top: 10%;
@@ -549,13 +555,6 @@ Media Queries */
         top: 45%; }
         nav .menuItem .menuLabel h6 {
           opacity: 1; }
-    nav .open1:hover,
-    nav .open2:hover,
-    nav .open3:hover,
-    nav .open4:hover {
-      -webkit-transform: none;
-          -ms-transform: none;
-              transform: none; }
 
   /* nav */
   @-webkit-keyframes menuDrop1 {
@@ -662,6 +661,134 @@ Media Queries */
     -webkit-transition: top 1.35s, -webkit-transform 0.3s;
             transition: top 1.35s, transform 0.3s; } }
 /* @media (max-width: 600px) */
+@media (max-width: 480px) {
+  nav {
+    width: 80px;
+    height: 80px;
+    top: 3%;
+    left: 5%;
+    /* .menuItem */ }
+    nav .menuItem {
+      width: 95%;
+      height: 95%;
+      top: 2.5%;
+      left: 2.5%; }
+      nav .menuItem .menuLabel {
+        top: 50%;
+        width: 50%; }
+        nav .menuItem .menuLabel svg {
+          fill: #333; }
+        nav .menuItem .menuLabel h6 {
+          bottom: 35%;
+          padding: 5% 0;
+          background: rgba(39, 174, 96, 0.6); }
+      nav .menuItem:nth-child(2) .menuLabel h6, nav .menuItem:nth-child(3) .menuLabel h6 {
+        bottom: 23%; }
+
+  /* nav */
+  @-webkit-keyframes menuMiniDrop1 {
+    0% {
+      top: 2.5%; }
+
+    35% {
+      top: 125%; }
+
+    55% {
+      top: 93%; }
+
+    75% {
+      top: 120%; }
+
+    95% {
+      top: 109%; }
+
+    100% {
+      top: 110%; } }
+
+  @-webkit-keyframes menuMiniDrop2 {
+    0% {
+      top: 2.5%; }
+
+    35% {
+      top: 231%; }
+
+    55% {
+      top: 197%; }
+
+    75% {
+      top: 221%; }
+
+    95% {
+      top: 214%; }
+
+    100% {
+      top: 215%; } }
+
+  @-webkit-keyframes menuMiniDrop3 {
+    0% {
+      top: 2.5%; }
+
+    35% {
+      top: 332%; }
+
+    55% {
+      top: 299%; }
+
+    75% {
+      top: 325%; }
+
+    95% {
+      top: 316%; }
+
+    100% {
+      top: 318%; } }
+
+  @-webkit-keyframes menuMiniDrop4 {
+    0% {
+      top: 2.5%; }
+
+    35% {
+      top: 430%; }
+
+    51% {
+      top: 403%; }
+
+    72% {
+      top: 431%; }
+
+    93% {
+      top: 422%; }
+
+    100% {
+      top: 423%; } }
+
+  nav .drop1 {
+    -webkit-animation: menuMiniDrop1 1s ease-out 0.18s 1;
+            animation: menuMiniDrop1 1s ease-out 0.18s 1;
+    top: 110%;
+    -webkit-transition: top 1.18s, -webkit-transform 0.3s;
+            transition: top 1.18s, transform 0.3s; }
+
+  nav .drop2 {
+    -webkit-animation: menuMiniDrop2 1s ease-out 0.08s 1;
+            animation: menuMiniDrop2 1s ease-out 0.08s 1;
+    top: 215%;
+    -webkit-transition: top 1.08s, -webkit-transform 0.3s;
+            transition: top 1.08s, transform 0.3s; }
+
+  nav .drop3 {
+    -webkit-animation: menuMiniDrop3 1s ease-out 0.15s 1;
+            animation: menuMiniDrop3 1s ease-out 0.15s 1;
+    top: 318%;
+    -webkit-transition: top 1.15s, -webkit-transform 0.3s;
+            transition: top 1.15s, transform 0.3s; }
+
+  nav .drop4 {
+    -webkit-animation: menuMiniDrop4 1.35s ease-out 0 1;
+            animation: menuMiniDrop4 1.35s ease-out 0 1;
+    top: 423%;
+    -webkit-transition: top 1.35s, -webkit-transform 0.3s;
+            transition: top 1.35s, transform 0.3s; } }
 .container1 {
   /*.brunicoLogo*/ }
   .container1 .brunicoLogo {
@@ -696,3 +823,6 @@ Media Queries */
 
   /* .container1 */ }
 /* @media (max-width: 650px) */
+@media (max-width: 480px) {
+  .container1 .brunicoLogo {
+    top: 4%; } }

@@ -9,7 +9,7 @@ nav {
 	height: 200px;
 	border-radius: 50%;
 	background: $detail1;
-	padding: 55px 10px;
+	// padding: 55px 10px;
 	cursor: pointer;
 	position: absolute;
 	top: 10%;
@@ -305,16 +305,16 @@ Media Queries */
 
 		} /* nav.nemuItem */
 
-		.open1,
-		.open2,
-		.open3,
-		.open4 {
-			// animation: none;
+		// .open1,
+		// .open2,
+		// .open3,
+		// .open4 {
+		// 	// animation: none;
 
-			&:hover {
-				transform: none;
-			}
-		}
+		// 	&:hover {
+		// 		transform: none;
+		// 	}
+		// }
 
 	} /* nav */
 
@@ -456,3 +456,176 @@ Media Queries */
 } /* @media (max-width: 600px) */
 
 
+@media (max-width: 480px) {
+
+	nav {
+		width: 80px;
+		height: 80px;
+		top: 3%;
+		left: 5%;
+
+		.menuItem {
+			width: 95%;
+			height: 95%;
+			top: 2.5%;
+			left: 2.5%;
+
+			.menuLabel {
+				top: 50%;
+				width: 50%;
+
+				svg {
+					fill: #333;
+				}
+
+				h6 {
+					bottom: 35%;
+					padding: 5% 0;
+					background: rgba(39, 174, 96, 0.6)
+				}
+			}
+		
+			&:nth-child(2) .menuLabel h6,
+			&:nth-child(3) .menuLabel h6 {
+				bottom: 23%;
+			}
+
+		} /* .menuItem */
+
+	} /* nav */	
+
+
+	@-webkit-keyframes menuMiniDrop1 {
+		0% {
+			top: 2.5%;
+		}
+
+		35% {
+			top: 125%;
+		}
+
+		55% {
+			top: 93%;
+		}
+
+		75% {
+			top: 120%;
+		}
+
+		95% {
+			top: 109%;
+		}
+
+		100% {
+			top: 110%;
+		}
+
+	}
+
+	@-webkit-keyframes menuMiniDrop2 {
+		0% {
+			top: 2.5%;
+		}
+
+		35% {
+			top: 231%;
+		}
+
+		55% {
+			top: 197%;
+		}
+
+		75% {
+			top: 221%;
+		}
+
+		95% {
+			top: 214%;
+		}
+
+		100% {
+			top: 215%;
+		}
+
+	}
+
+	@-webkit-keyframes menuMiniDrop3 {
+		0% {
+			top: 2.5%;
+		}
+
+		35% {
+			top: 332%;
+		}
+
+		55% {
+			top: 299%;
+		}
+
+		75% {
+			top: 325%;
+		}
+
+		95% {
+			top: 316%;
+		}
+
+		100% {
+			top: 318%;
+		}
+
+	}
+
+	@-webkit-keyframes menuMiniDrop4 {
+		0% {
+			top: 2.5%;
+		}
+
+		35% {
+			top: 430%;
+		}
+
+		51% {
+			top: 403%;
+		}
+
+		72% {
+			top: 431%;
+		}
+
+		93% {
+			top: 422%;
+		}
+
+		100% {
+			top: 423%;
+		}
+
+	}
+
+	@mixin menuDown($position2, $speed2) {
+		top: $position2;
+		transition: top $speed2, transform 0.3s;
+	}
+
+	nav .drop1 {
+		animation: menuMiniDrop1 1s ease-out 0.18s 1;
+		@include menuDown(110%, 1.18s);
+	}
+
+	nav .drop2 {
+		animation: menuMiniDrop2 1s ease-out 0.08s 1;
+		@include menuDown(215%, 1.08s);
+	}
+
+	nav .drop3 {
+		animation: menuMiniDrop3 1s ease-out 0.15s 1;
+		@include menuDown(318%, 1.15s);
+	}
+
+	nav .drop4 {
+		animation: menuMiniDrop4 1.35s ease-out 0 1;
+		@include menuDown(423%, 1.35s);
+	}
+
+}
