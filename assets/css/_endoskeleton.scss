@@ -93,6 +93,11 @@ Content Wrapper */
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 200;
+	text-align: right;
+}
+
+.content2 {
+	text-align: left;
 }
 
 .content p {

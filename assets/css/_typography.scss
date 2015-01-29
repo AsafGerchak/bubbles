@@ -15,8 +15,19 @@ $detail3: rgba(243, 156, 18, 0.15);
 $font: #222;
 
 
-h3, h6, p, a {
+h2, h3, h6, p, a {
 	color: $font;
+}
+
+h2, h6 {
+	font-family:'Asap', serif;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: -2px;
 }
 
 h3 {
@@ -27,8 +38,8 @@ h3 {
 }
 
 h6 {
-	font-family:'Asap', serif;
-	font-weight: 400;
+	// font-family:'Asap', serif;
+	// font-weight: 400;
 	font-size: 11px;
 }
 
