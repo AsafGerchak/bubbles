@@ -661,6 +661,7 @@ Media Queries */
     top: 390%;
     -webkit-transition: top 1.35s, -webkit-transform 0.3s;
             transition: top 1.35s, transform 0.3s; } }
+/* @media (max-width: 600px) */
 .container1 {
   /*.brunicoLogo*/ }
   .container1 .brunicoLogo {
