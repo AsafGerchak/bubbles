@@ -18,11 +18,16 @@ section {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	// overflow: hidden;
+	padding-top: 10%;
+}
+
+.header {
 	overflow: hidden;
 }
 
 @mixin hero($pic) {
-	background: linear-gradient($detail3, $detail3), url($pic) center no-repeat;
+	background: linear-gradient($detail3, $detail3), url($pic) center 70% no-repeat;
 	// background: linear-gradient($detail4, $detail4), url($pic) center no-repeat;
 	// background: url($pic) center no-repeat;
 	background-size: cover;
@@ -70,12 +75,12 @@ Colored Block */
 }
 
 .colorSlash2 {
-	width: 100%;
+	width: 200%;
 	height: 200%;
 	background: $block2;
-	position: absolute;
-	right: 60%;
-	top: -25%;
+	position: relative;
+	// right: 60%;
+	// top: -25%;
 	-webkit-transform: rotate(-20deg);
 	transform: rotate(-20deg);
 }
