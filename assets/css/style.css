@@ -827,6 +827,16 @@ Media Queries */
     width: 38%; }
 
 /* .container1 */
+.wrapper a {
+  width: 30%;
+  padding: 1% 0;
+  margin: 2% 5% 2% 0;
+  float: left; }
+  .wrapper a:nth-child(3n) {
+    margin: 2% 0; }
+  .wrapper a img {
+    width: 100%; }
+
 /* =================================
 Media Queries */
 @media (max-width: 600px) {

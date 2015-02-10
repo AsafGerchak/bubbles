@@ -43,6 +43,21 @@
 
 } /* .container1 */
 
+.wrapper a {
+	width: 30%;
+	padding: 1% 0;
+	margin: 2% 5% 2% 0;
+	float: left;
+		
+		&:nth-child(3n) {
+			margin: 2% 0;
+		}
+
+		img {
+			width: 100%;
+		}
+}
+
 
 /* =================================
 Media Queries */
