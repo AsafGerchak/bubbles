@@ -212,16 +212,22 @@ Large backgrounds */
 header,
 footer {
   width: 100%;
-  height: 100%;
   position: relative;
   overflow: hidden; }
 
+header {
+  height: -webkit-calc(100% + 3px);
+  height: calc(100% + 3px);
+  border-bottom: 3px solid #007AC3; }
+
+footer {
+  height: 100%; }
+
 section {
   width: 100%;
-  height: 100%;
-  padding: 350px 0 5% 0;
+  padding: 450px 0 0 0;
   position: relative;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .container1 {
   background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/working.jpg") center center no-repeat;
@@ -229,21 +235,19 @@ section {
   background-size: cover; }
 
 .container2 {
-  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/benches.jpg") center -300px no-repeat;
-  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/benches.jpg") center -300px no-repeat;
-  background-size: cover; }
+  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/benches.jpg") center -200px no-repeat;
+  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/benches.jpg") center -200px no-repeat;
+  background-size: contain; }
 
 .container3 {
-  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/typewriter.jpg") center center no-repeat;
-  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/typewriter.jpg") center center no-repeat;
-  background-size: cover;
-  margin-top: 30%; }
+  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/typewriter.jpg") center -200px no-repeat;
+  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/typewriter.jpg") center -200px no-repeat;
+  background-size: contain; }
 
 .container4 {
-  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/bridge.jpg") center -300px no-repeat;
-  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/bridge.jpg") center -300px no-repeat;
-  background-size: cover;
-  margin-top: 30%; }
+  background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/bridge.jpg") center -200px no-repeat;
+  background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/bridge.jpg") center -200px no-repeat;
+  background-size: cover; }
 
 .container5 {
   background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/coffee.jpg") center center no-repeat;
@@ -267,21 +271,14 @@ Colored Block */
 .colorSlash {
   width: 100%;
   background: #8e44ad;
-  padding: 10% 0;
-  position: absolute;
-  top: 165%;
+  padding: 10% 0 18% 0;
+  margin-bottom: -10%;
   -webkit-transform: skewY(7deg);
       -ms-transform: skewY(7deg);
-          transform: skewY(7deg);
-  z-index: 500; }
+          transform: skewY(7deg); }
 
 .colorSlash2 {
-  width: 100%;
   background: #c0392b;
-  padding: 10% 0;
-  position: absolute;
-  top: 335%;
-  z-index: 500;
   -webkit-transform: skewY(-7deg);
       -ms-transform: skewY(-7deg);
           transform: skewY(-7deg); }

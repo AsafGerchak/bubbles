@@ -17,24 +17,33 @@ Large backgrounds */
 header,
 footer {
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 	position: relative;
 	overflow: hidden;
 }
 
-section {
-	width: 100%;
-	height: 100%;
-	padding: 350px 0 5% 0;
-	position: relative;
-	overflow-x: hidden;
+header {
+	height: calc(100% + 3px);
+	border-bottom: 3px solid #007AC3;
 }
 
-@mixin hero($pic, $top) {
+footer {
+	height: 100%;
+}
+
+section {
+	width: 100%;
+	// height: 100%;
+	padding: 450px 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+
+@mixin hero($pic, $top, $size) {
 	background: linear-gradient($detail3, $detail3), url($pic) center $top no-repeat;
 	// background: linear-gradient($detail4, $detail4), url($pic) center no-repeat;
 	// background: url($pic) center no-repeat;
-	background-size: cover;
+	background-size: $size;
 	// z-index: $index;
 }
 
@@ -44,27 +53,27 @@ section {
 	// background-size: cover;
 	// background: linear-gradient($detail3, $detail3), url("../images/big/working.jpg") center no-repeat;
 	// background-size: cover;
-	@include hero("../images/big/working.jpg", center);
+	@include hero("../images/big/working.jpg", center, cover);
 }
 
 .container2 {
 	// background: url("https://ununsplash.imgix.net/photo-1414849424631-8b18529a81ca?q=75&fm=jpg&s=0e993004a2f3704e8f2ad5469315ccb7");
 	// background-size: cover;
-	@include hero("../images/big/benches.jpg", -300px);
+	@include hero("../images/big/benches.jpg", -200px, contain);
 }
 
 .container3 {
-	@include hero("../images/big/typewriter.jpg", center);
-	margin-top: 30%;
+	@include hero("../images/big/typewriter.jpg", -200px, contain);
+	// margin-top: 30%;
 }
 
 .container4 {
-	@include hero("../images/big/bridge.jpg", -300px);
-	margin-top: 30%;
+	@include hero("../images/big/bridge.jpg", -200px, cover);
+	// margin-top: 30%;
 }
 
 .container5 {
-	@include hero("../images/big/coffee.jpg", center);
+	@include hero("../images/big/coffee.jpg", center, cover);
 }
 
 
@@ -87,9 +96,10 @@ Colored Block */
 	width: 100%;
 	// height: 200%;
 	background: $block2;
-	padding: 10% 0;
-	position: absolute;
-	top: 165%;
+	padding: 10% 0 18% 0;
+	margin-bottom: -10%;
+	// position: absolute;
+	// top: 165%;
 	// left: -25%;
 	// top: 45%;
 	// z-index: 1000;
@@ -97,19 +107,19 @@ Colored Block */
 	// top: -25%;
 	// transform: rotate(10deg);
 	transform: skewY(7deg);
-	z-index: 500;
+	// z-index: 500;
 }
 
 .colorSlash2 {
-	width: 100%;
+	// width: 100%;
 	// height: 200%;
 	background: $block1;
-	padding: 10% 0;
-	position: absolute;
+	// padding: 10% 0;
+	// position: absolute;
 	// right: -60%
 	// left: -25%;
-	top: 335%;
-	z-index: 500;
+	// top: 335%;
+	// z-index: 500;
 	// transform: rotate(-10deg);
 	transform: skewY(-7deg);
 }
