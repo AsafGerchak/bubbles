@@ -55,10 +55,12 @@ section {
 
 .container3 {
 	@include hero("../images/big/typewriter.jpg", center);
+	margin-top: 30%;
 }
 
 .container4 {
 	@include hero("../images/big/bridge.jpg", -300px);
+	margin-top: 30%;
 }
 
 .container5 {
@@ -102,11 +104,12 @@ Colored Block */
 	width: 100%;
 	// height: 200%;
 	background: $block1;
+	padding: 10% 0;
 	position: absolute;
 	// right: -60%
 	// left: -25%;
-	top: 500%;
-	// z-index: 1000;
+	top: 335%;
+	z-index: 500;
 	// transform: rotate(-10deg);
 	transform: skewY(-7deg);
 }
@@ -143,6 +146,7 @@ Content Wrapper */
 
 .content2 {
 	text-align: right;
+	transform: skewY(7deg);
 }
 
 .content p {

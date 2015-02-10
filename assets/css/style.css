@@ -236,12 +236,14 @@ section {
 .container3 {
   background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/typewriter.jpg") center center no-repeat;
   background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/typewriter.jpg") center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 30%; }
 
 .container4 {
   background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/bridge.jpg") center -300px no-repeat;
   background: linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/bridge.jpg") center -300px no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 30%; }
 
 .container5 {
   background: -webkit-linear-gradient(rgba(243, 156, 18, 0.15), rgba(243, 156, 18, 0.15)), url("../images/big/coffee.jpg") center center no-repeat;
@@ -276,8 +278,10 @@ Colored Block */
 .colorSlash2 {
   width: 100%;
   background: #c0392b;
+  padding: 10% 0;
   position: absolute;
-  top: 500%;
+  top: 335%;
+  z-index: 500;
   -webkit-transform: skewY(-7deg);
       -ms-transform: skewY(-7deg);
           transform: skewY(-7deg); }
@@ -305,7 +309,10 @@ Content Wrapper */
           transform: skewY(-7deg); }
 
 .content2 {
-  text-align: right; }
+  text-align: right;
+  -webkit-transform: skewY(7deg);
+      -ms-transform: skewY(7deg);
+          transform: skewY(7deg); }
 
 /* =================================
 Media Queries */
