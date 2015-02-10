@@ -24,7 +24,7 @@ footer {
 
 section {
 	width: 100%;
-	// height: 100%;
+	height: 100%;
 	padding: 350px 0 5% 0;
 	position: relative;
 	overflow-x: hidden;
@@ -54,7 +54,7 @@ section {
 }
 
 .container3 {
-	@include hero("../images/big/typewriter.jpg", -300px);
+	@include hero("../images/big/typewriter.jpg", center);
 }
 
 .container4 {
@@ -82,29 +82,33 @@ Colored Block */
 }
 
 .colorSlash {
-	width: 150%;
+	width: 100%;
 	// height: 200%;
 	background: $block2;
-	padding: 5% 0;
-	position: relative;
-	left: -25%;
-	top: 45%;
-	z-index: 1000;
+	padding: 10% 0;
+	position: absolute;
+	top: 165%;
+	// left: -25%;
+	// top: 45%;
+	// z-index: 1000;
 	// right: 60%;
 	// top: -25%;
-	transform: rotate(10deg);
+	// transform: rotate(10deg);
+	transform: skewY(7deg);
+	z-index: 500;
 }
 
 .colorSlash2 {
-	width: 200%;
-	height: 200%;
+	width: 100%;
+	// height: 200%;
 	background: $block1;
 	position: absolute;
 	// right: -60%
-	left: -25%;
-	top: 45%;
-	z-index: 1000;
-	transform: rotate(-10deg);
+	// left: -25%;
+	top: 500%;
+	// z-index: 1000;
+	// transform: rotate(-10deg);
+	transform: skewY(-7deg);
 }
 
 
@@ -124,15 +128,16 @@ Content Wrapper */
 }
 
 .content {
-	width: 60%;
+	width: 85%;
 	// height: 90%;
 	margin: 0 auto;
 	// background: rgba(255, 255, 255, 0.2);
 	position: relative;
 	// top: 50%;
 	// transform: translateY(-50%);
-	transform: rotate(-10deg);
-	z-index: 1100;
+	// transform: rotate(-10deg);
+	transform: skewY(-7deg);
+	// z-index: 1100;
 	// text-align: right;
 }
 
