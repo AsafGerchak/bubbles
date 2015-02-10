@@ -68,7 +68,7 @@ section {
 }
 
 .container4 {
-	@include hero("../images/big/bridge.jpg", -200px, cover);
+	@include hero("../images/big/bridge.jpg", -150px, cover);
 	// margin-top: 30%;
 }
 
@@ -96,7 +96,7 @@ Colored Block */
 	width: 100%;
 	// height: 200%;
 	background: $block2;
-	padding: 10% 0 18% 0;
+	padding: 3% 0 18% 0;
 	margin-bottom: -10%;
 	// position: absolute;
 	// top: 165%;
@@ -152,36 +152,15 @@ Content Wrapper */
 	transform: skewY(-7deg);
 	// z-index: 1100;
 	// text-align: right;
-}
+
+		h2 {
+			margin-bottom: 70px;
+		}
+} /*.content*/
 
 .content2 {
 	text-align: right;
 	transform: skewY(7deg);
-}
-
-.content p {
-	// width: 22%;
-	// position: relative;
-	// right: 0;
-	// top: 30%;
-	// left: 7%;
-	// margin: 0 0 0 75%;
-	// text-align: right;
-	// line-height: 1.5;
-	// -webkit-transform: rotate(-20deg);
-	// transform: rotate(-20deg);
-}
-
-.content2 p {
-	// position: relative;
-	// top: 37%;
-	// left: 10%;
-	// width: 35%;
-	// margin: 0 75% 0 0;
-	// text-align: left;
-	// line-height: 1.5;
-	// -webkit-transform: rotate(20deg);
-	// transform: rotate(20deg);
 }
 
 
@@ -190,26 +169,86 @@ Media Queries */
 
 @media (max-width: 600px) {
 	
-	.colorSlash {
+	.sideSlash {
 		width: 200%;
 		right: -25%;
 		top: 60%;
 	}
 
+	.container2 {
+		@include hero("../images/big/benches.jpg", top, 160%);
+	}
+
+	.container3 {
+		@include hero("../images/big/typewriter.jpg", top, 155%);
+	}
+
+	.container4 {
+		@include hero("../images/big/bridge.jpg", top, 155%);
+	}
+
+	.colorSlash {
+		padding-top: 8%;
+		// width: 200%;
+		// right: -25%;
+		// top: 60%;
+	}
+
 	.colorSlash2 {
-		width: 200%;
-		left: -25%;
-		top: 60%;
+		// width: 200%;
+		// left: -25%;
+		// top: 60%;
 	}
 
 	.content {
-		height: 95%;
+		// height: 95%;
 
-		p {
-			font-size: 16px;
-			margin: 110% 0 0 0;
-			text-align: left;
+		h2 {
+			margin-bottom: 30px;
+			// font-size: 16px;
+			// margin: 110% 0 0 0;
+			// text-align: left;
 		}
 	
 	}
-}
+} /* end @media (max-width: 600px) */
+
+@media (max-width: 480px) {
+	
+	.sideSlash {
+		right: -5%;
+	}
+
+	.container2 {
+		@include hero("../images/big/benches.jpg", top, 200%);
+	}
+
+	.container3 {
+		@include hero("../images/big/typewriter.jpg", top, 200%);
+	}
+
+	.container4 {
+		@include hero("../images/big/bridge.jpg", top, 200%);
+	}
+
+} /* end @media (max-width: 480px) */
+
+@media (max-width: 380px) {
+	
+	.sideSlash {
+		right: -5%;
+	}
+
+	.container2 {
+		@include hero("../images/big/benches.jpg", top, 270%);
+	}
+
+	.container3 {
+		@include hero("../images/big/typewriter.jpg", top, 270%);
+	}
+
+	.container4 {
+		@include hero("../images/big/bridge.jpg", top, 270%);
+	}
+
+} /* end @media (max-width: 380px) */
