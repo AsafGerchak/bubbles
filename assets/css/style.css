@@ -844,7 +844,7 @@ Media Queries */
     width: 60%;
     left: inherit;
     bottom: inherit;
-    top: 6.5%;
+    top: 3.5%;
     right: 5%; }
   .container1 h3 {
     width: 100%;
@@ -855,4 +855,4 @@ Media Queries */
 /* @media (max-width: 650px) */
 @media (max-width: 480px) {
   .container1 .brunicoLogo {
-    top: 4%; } }
+    top: 0; } }
