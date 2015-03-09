@@ -43,7 +43,7 @@
 
 } /* .container1 */
 
-.wrapper a {
+.brandLogos a {
 	width: 30%;
 	padding: 1% 0;
 	margin: 2% 5% 2% 0;
@@ -82,6 +82,16 @@ Media Queries */
 		}
 
 	} /* .container1 */
+
+	.brandLogos a {
+		width: 45%;
+		margin: 2% 0;
+
+		&:nth-child(2n-1) {
+			margin: 2% 10% 2% 0;
+		}
+	} /* .brandLogos a */
+
 } /* @media (max-width: 650px) */
 
 // NEXUS 5 BELOW WHAT?!?
@@ -90,6 +100,15 @@ Media Queries */
 	.container1 .brunicoLogo {
 		// top: 50%;
 		top: 0;
-	}
+	} /* .container1 .brunicoLogo */
+
+	.brandLogos a {
+		width: 90%;
+		margin: 4% 5%;
+
+		&:nth-child(2n-1) {
+			margin: 4% 5%;
+		}
+	} /* .brandLogos */
 
 }

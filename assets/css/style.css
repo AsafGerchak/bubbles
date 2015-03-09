@@ -827,14 +827,14 @@ Media Queries */
     width: 38%; }
 
 /* .container1 */
-.wrapper a {
+.brandLogos a {
   width: 30%;
   padding: 1% 0;
   margin: 2% 5% 2% 0;
   float: left; }
-  .wrapper a:nth-child(3n) {
+  .brandLogos a:nth-child(3n) {
     margin: 2% 0; }
-  .wrapper a img {
+  .brandLogos a img {
     width: 100%; }
 
 /* =================================
@@ -851,8 +851,24 @@ Media Queries */
     text-align: left;
     bottom: 0; }
 
-  /* .container1 */ }
+  /* .container1 */
+  .brandLogos a {
+    width: 45%;
+    margin: 2% 0; }
+    .brandLogos a:nth-child(2n-1) {
+      margin: 2% 10% 2% 0; }
+
+  /* .brandLogos a */ }
 /* @media (max-width: 650px) */
 @media (max-width: 480px) {
   .container1 .brunicoLogo {
-    top: 0; } }
+    top: 0; }
+
+  /* .container1 .brunicoLogo */
+  .brandLogos a {
+    width: 90%;
+    margin: 4% 5%; }
+    .brandLogos a:nth-child(2n-1) {
+      margin: 4% 5%; }
+
+  /* .brandLogos */ }
