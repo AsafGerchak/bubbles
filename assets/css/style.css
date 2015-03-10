@@ -293,6 +293,7 @@ Colored Block */
 Content Wrapper */
 .headerContent {
   width: 94%;
+  max-width: 1400px;
   height: 90%;
   margin: 0 auto;
   position: relative;
@@ -305,6 +306,7 @@ Content Wrapper */
 
 .content {
   width: 85%;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
   -webkit-transform: skewY(-7deg);
