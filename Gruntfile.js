@@ -11,11 +11,11 @@ module.exports = function(grunt) {
    	},
    	html: {
    		files: 'index.html',
-   		tasks: ['']
+   		// tasks: ['']
    	},
       javascript: {
          files: 'assets/js/app.js',
-         tasks: ['']
+         // tasks: ['']
       },
    	options: {
    		livereload: true
